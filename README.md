@@ -72,3 +72,17 @@ Machinewy needed:
 An `.owo` file has the same general syntax as a `.cfg` or `.ini` file. (Specifically, it uses the [`configparser` Python library.](https://docs.python.org/3/library/configparser.html))
 
 I've included some example files that should help you get started.
+
+# Other things like Ratiowo
+
+* The many Factorio-specific planners out there, like [Helmod](https://mods.factorio.com/mod/helmod) and [this online tool](https://doomeer.com/factorio).
+* [`recipe_ratio_calculator`](https://github.com/Eadword/recipe_ratio_calculator), which is a lot less janky but more complicated and confusing in my opinion.
+
+Despite most of these being strictly better than Ratiowo in most ways, none of them have a cute ASCII-art racoon/cat mascot.
+
+```
+   ^---^
+ / O   O \ -- Bai~~!
+ \ >///< /    
+  -------
+  ```
