@@ -1,0 +1,52 @@
+# An example config file.
+
+# Let's say we want to make a bunch of stone pickaxes for some reason.
+# Define an ingredient with [square brackets]:
+[Stone Pickaxe]
+# The amount of time it takes to do one operation.
+# Let's say it takes 1 second.
+# Ratiowo will ignore anything after the number, so you can use units here.
+Time = 1 sec
+# The number of things produced per operation
+Units = 1x
+# What machine is this produced in?
+Machine = Crafter
+# Anything included in an ingredient that isn't `Time`, `Units` or `Machine` are the ingredient's
+# sub-ingredients.
+# In this case, a stone pickaxe requires 3 cobblestone and 2 sticks.
+Cobblestone = 3x
+# Make sure not to accidentally pluralize things! This should be `Stick` not `Sticks`.
+Stick = 2x
+
+[Cobblestone]
+# One piece of cobblestone is generated every second, by magical means.
+Time = 1 sec
+Units = 1x
+Machine = Cobblestone Generator
+# Because there's no additional keys here, it has no sub-ingredients.
+
+[Stick]
+# Pretend we're using the same autocrafter that does an operation once a second.
+Time = 1 sec
+# But, a stick recipe produces 4 sticks!
+Units = 4x
+Machine = Crafter
+# And sticks require 2 planks.
+Plank = 2x
+
+[Plank]
+# Let's say planks are made with the water-powered saw.
+# I don't actually know how long it takes in-game but let's pretend it takes 5 seconds.
+Time = 5 sec
+Units = 4x
+Machine = Water-powered Saw
+Log = 1x
+
+[Log]
+# Let's not worry about where the logs come from.
+# Perhaps you have some sort of magical tree farm?
+# Let's say it produces a stack every minute.
+Units = 64x
+Time = 60 sec
+Machine = Tree Farm
+# and it requires nothing.

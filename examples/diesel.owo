@@ -1,0 +1,78 @@
+# How to produce diesel fuel in FTB Interactions.
+# This assumes MV machinery.
+
+[Diesel Power]
+Units = 1 generator
+Time = 0.75 sec
+Machine = Diesel Generator
+# requires
+Diesel = 1 mB
+
+[Diesel]
+Units = 6000 mB
+Time = 0.8 sec
+Machine = Mixer
+# requires
+Light Fuel = 5000 mB
+Heavy Fuel = 1000 mB
+
+[Light Fuel]
+Units = 57 mB
+Time = 0.5 sec
+Machine = Distillery
+# requires
+Crystallized Oil = 50 mB
+
+[Heavy Fuel]
+Units = 18 mB
+Time = 0.5 sec
+Machine = Distillery
+# requires
+Crystallized Oil = 50 mB
+
+[Crystallized Oil]
+Units = 1500 mB
+Time = 0.5 sec
+Machine = Mixer
+# requires
+Oil = 1000 mB
+Crystallized Canola Seed = 1x
+
+[Oil]
+Units = 1000 mB
+Time = 1.33333 sec
+Machine = IF Pump
+
+[Crystallized Canola Seed]
+Units = 1x
+Time = 5 sec
+Machine = Chemical Bath
+# requires
+Canola Seeds = 1x
+Menril Resin = 50 mB
+
+[Canola Seeds]
+Units = 3x
+# amount of time is a guess
+Time = 3 sec
+Machine = Roost
+
+[Menril Resin]
+Units = 250 mB
+Time = 3.75 sec
+Machine = Centrifuge
+# requires
+Menril Crystal = 1x
+
+[Menril Crystal]
+Units = 4x
+Time = 0.25 sec
+Machine = Extractor
+# requires
+Menril Wood = 1x
+
+[Menril Wood]
+# I don't know how fast the tree beacon is ;(
+Units = 1x
+Time = 1 sec
+Machine = Tree Beacon

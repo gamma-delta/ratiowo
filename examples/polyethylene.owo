@@ -1,0 +1,55 @@
+# How to produce polyethylene (with chickens) in FTB Interactions.
+# This assumes MV machinery.
+
+[Polyethylene]
+Units = 1000mb
+Time = 75sec
+Machine = Chemical Reactor
+# requires
+Ethanol = 1000mb
+Plastic Egg = 32x
+
+[Plastic Egg]
+Units = 1x
+Time = 1sec
+Machine = Roost
+
+[Ethanol]
+Units = 600mB
+Time = 3.2 sec
+Machine = Distillery
+# requires
+Biomass = 1000 mB
+
+[Biomass]
+Units = 150 mB
+Time = 7.5 sec
+Machine = Brewery
+# requires
+Menril Sapling = 1x
+Honey = 100 mB
+
+[Menril Sapling]
+# Maybe it produces a stack a minute? I don't know...
+Units = 64x
+Time = 60 sec
+Machine = Tree Beacon
+
+[Honey]
+Units = 250 mB
+Time = 1.785 sec
+Machine = Fluid Extractor
+# requires
+Honey Item = 1x
+
+[Honey Item]
+Units = 1x
+Time = 2.5 sec
+Machine = Centrifuge
+# requires
+Honeycomb = 1x
+
+[Honeycomb]
+Units = 1x
+Time = 9.5 sec
+Machine = Apiary
