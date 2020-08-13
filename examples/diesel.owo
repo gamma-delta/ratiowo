@@ -31,7 +31,7 @@ Machine = Distillery
 Crystallized Oil = 50 mB
 
 [Crystallized Oil]
-Units = 1500 mB
+Units = 5000 mB
 Time = 0.5 sec
 Machine = Mixer
 # requires

@@ -37,7 +37,7 @@ class Calculator:
 
             for sub_ingredient, sub_amount in ingredient.requires.items():
                 helper(self.entries[sub_ingredient],
-                       sub_amount * required_amount / ingredient.units, ingredient.time)
+                       sub_amount * required_amount / ingredient.units, ingredient.time * required_time)
 
         root_ingredient = self.entries[wanted_name]
         # Calculare the required amount for the first one
